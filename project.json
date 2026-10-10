@@ -8,7 +8,7 @@
     {
       "id": "chat",
       "title": "Ein Gespräch. Viele Möglichkeiten.",
-      "description": "Direkte Gesprächsleiste mit Plus-Aktionen, bewusster Websuche und kompakter Modellwahl. Antwortstil als sichtbare Auswahl neben dem Chat.",
+      "description": "Direkte Gesprächsleiste mit Plus-Aktionen, sofort umschaltbarer Websuche und kompakter Modellwahl. Antwortstil als sichtbare Auswahl neben dem Chat.",
       "image": "assets/chat.png"
     },
     {
@@ -242,16 +242,16 @@
       "id": "research",
       "name": "Recherche",
       "symbol": "⌕",
-      "intro": "Öffentliche Suche mit einem bewusst bestätigten Thema.",
+      "intro": "Öffentlich recherchieren, direkt aus dem Gespräch.",
       "features": [
         {
-          "title": "Bestätigter öffentlicher Suchtext",
-          "description": "Die Suchanfrage ist getrennt editierbar. Gesprächshistorie und Dokumente werden nicht automatisch als Suchtext übertragen.",
+          "title": "Websuche ohne Bestätigungsdialog",
+          "description": "Standardmäßig aktiv, direkt im Chat umschaltbar und als Browserstandard einstellbar. Aktuelle Frage als Suchtext; Gesprächshistorie und Dokumente werden nicht automatisch übertragen. „Nur lokal“ schaltet die Suche aus.",
           "status": "live"
         },
         {
           "title": "Recherche zu lokalen Dateien",
-          "description": "Bestätigte Suche kann einen lokalen Word-, PowerPoint- oder Inhalts-PDF-Entwurf unterstützen. Query, Treffer und Quellenreferenzen sind am Lauf gebunden.",
+          "description": "Aktive Websuche kann einen lokalen Word-, PowerPoint- oder Inhalts-PDF-Entwurf unterstützen. Query, Treffer und Quellenreferenzen sind am Lauf gebunden.",
           "status": "live"
         },
         {
@@ -385,7 +385,7 @@
         },
         {
           "title": "Direkte Gesprächsaktionen statt Formularauswahl",
-          "description": "Plus-Menü für Dateien, Projektquellen, Aufgaben und Antwortstil. Modellwahl mit erklärten Optionen, Websuche bewusst pro Nachricht und mitwachsendes Eingabefeld. Formate/Vorlagen als Auswahlkarten, lokale Dateiablage per Drag-and-drop. Tastatur und mobile Ansichten synthetisch geprüft. Auf der Test-VM installiert und gezielt im Browser geprüft.",
+          "description": "Plus-Menü für Dateien, Projektquellen, Aufgaben und Antwortstil. Modellwahl mit erklärten Optionen, direkter Webschalter mit gespeichertem Standard und mitwachsendes Eingabefeld. Formate/Vorlagen als Auswahlkarten, lokale Dateiablage per Drag-and-drop. Tastatur und mobile Ansichten werden gezielt geprüft.",
           "status": "local"
         },
         {
@@ -425,14 +425,14 @@
   "development": {
     "mode": "local",
     "schema": "0027",
-    "browserChecks": 16,
+    "browserChecks": 17,
     "serverDeployment": true,
-    "commit": "a0eef3b",
-    "ciTests": 643,
-    "ciUrl": "https://github.com/sschluet/obdaAI/actions/runs/38054014847",
-    "deployedCommit": "a0eef3b",
+    "commit": "ed911e9",
+    "ciTests": 648,
+    "ciUrl": "https://github.com/sschluet/obdaAI/actions/runs/38056148463",
+    "deployedCommit": "ed911e9",
     "deployedSchema": "0027",
-    "liveScope": "Gepinnte HTTPS-/UI-Abnahme, echte lokale QA-Antwort, Arbeitsraumsuche und konkrete Rechercheeinordnung mit einzelnem Freigabefehler nach Reload. Keine echte Web-/Cloudrecherche dieser Abnahme; Passwort unverändert. Breite Geräteabnahme offen.",
+    "liveScope": "Gepinnte HTTPS-/UI-Abnahme, echte Webrecherche und Wiederholung nach Reload ohne Bestätigungsdialog: jeweils acht gespeicherte Quellen und lokale Modellantwort. Dauerhafter Webschalter, Nur-lokal-Ausnahme und Mobilansicht geprüft. Passwort unverändert; breite Cloud-/Geräteabnahme offen.",
     "designModernized": true,
     "interactionModernized": true
   }
